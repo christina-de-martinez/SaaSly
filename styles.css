@@ -76,6 +76,7 @@ nav {
   height: 400px;
   width: 150px;
   clip-path: polygon(0 0, 100% 0, 45% 100%, 0% 100%);
+  overflow-x: hidden;
 }
 
 .device-img3 {
@@ -216,7 +217,7 @@ p {
   box-shadow: 2px 2px 7px #7961C5;
 }
 
-.header-btn:hover {
+.header-btn:hover, .cta-button:hover {
   box-shadow: 3px 3px 9px #2D2E82;
 }
 
@@ -260,10 +261,19 @@ p {
 
 .profile img {
   height: 100px;
-  width: auto;
+  width: 100px;
+  object-fit: cover;
   border-radius: 50%;
   box-shadow: 2px 2px 10px gray;
   margin-top: 10px;
+}
+
+#img2 {
+  object-position: 50% 20%;
+}
+
+#img3 {
+  object-position: top;
 }
 
 .info {
@@ -295,4 +305,57 @@ p {
   font-weight: 500;
   text-shadow: 0;
   color: #272851;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h3-container {
+  width: 900px;
+  padding-bottom: 10px;
+}
+
+.compare-text {
+  width: 900px;
+  padding-bottom: 10px;
+}
+
+#below-testimonials {
+  margin-top: 30px;
+}
+
+.compare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.compare-container {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.compare-item {
+  height: 400px;
+  width: 210px;
+  border-radius: 10px;
+  background-color: #F8F7FC;
+  border: 1px solid #D8CFF2;
+}
+
+.cta-button {
+  width: 200px;
+  height: 60px;
+  margin: 30px 0;
+  margin-right: 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 2px 2px 7px #D8CFF2;
 }
