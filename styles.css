@@ -9,6 +9,7 @@
 
 .navcontainer {
   display: flex;
+  z-index: 1;
   justify-content: center;
 }
 
@@ -146,6 +147,12 @@ a {
   width: 100%;
 }
 
+.compare__h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
 .header--behind {
   /* background-image: radial-gradient(farthest-corner at 100% 85%, #FFF6B7 10%, #F6416C 100%); */
   background-image: radial-gradient(farthest-corner at 100% 85%, #FFA6B7 10%, #1E2AD2 100%);
@@ -199,6 +206,27 @@ p {
   color: #272851;
   margin-bottom: 20px;
   font-size: 16px;
+}
+
+.compare__p {
+  margin: 0 8px;
+  padding: 0;
+  font-size: 14px;
+}
+
+.compare__h4 {
+  font-size: 20px;
+  text-align: center;
+  margin: 30px auto 5px auto;
+  font-family: 'Cabin', sans-serif;
+  display: inline-block;
+}
+
+span {
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  color: gray;
+  display: inline-block;
 }
 
 .textlink {
@@ -358,4 +386,80 @@ p {
   border-radius: 4px;
   font-size: 14px;
   box-shadow: 2px 2px 7px #D8CFF2;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header--infront {
+    display: none;
+  }
+  .background-below {
+    justify-content: flex-end;
+  }
+  nav {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  .device-img2, .device-img3 {
+    display: none;
+  }
+  .container, .testimonials, .compare {
+    margin-left: 25px;
+  }
+  .box-container, {
+    width: 850px;
+  }
+  .all-boxes {
+    justify-content: space-evenly;
+    width: 850px;
+  }
+  .h3-container {
+    margin-left: 25px;
+  }
+  .compare-container {
+    width: 800px;
+    flex-wrap: wrap;
+  }
+  .compare-item {
+    width: 190px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .compare-text, .h3-container {
+    width: 700px;
+    text-align: center;
+  }
+
+  .compare-item {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .compare-container {
+    justify-content: space-around;
+    width: 90%;
+  }
+  .all-boxes {
+    justify-content: center;
+  }
+  .box {
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .device-img1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  /* Mobile header */
+  /* Fix testimonial boxes -- too wide */
+}
+@media only screen and (min-width: 631px) {
+  
 }
